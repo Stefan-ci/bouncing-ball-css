@@ -1,0 +1,121 @@
+body{
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+}
+
+/* Animation ball, bouncing, bounce  */
+.ball{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: radial-gradient(#fff, #fa09f2, #ff0000);
+}
+
+.bounce{
+  animation: bounce 3s linear 0.5s infinite alternate;
+}
+
+.bouncing{
+  animation: bouncing 1.5s ease-in 1s infinite alternate;
+}
+
+@keyframes bounce{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(calc(100vw - 10vmin));
+  }
+}
+
+@keyframes bouncing{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(calc(100vh - 10vmin));
+  }
+}
+
+
+/* Animation ball-2, bounce-2, bouncing-2 */
+.ball-2{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  right: 10px;
+  left: 0;
+  border-radius: 50%;
+  background: radial-gradient(#fff, #f8ff30, #ff6c02);
+}
+
+.bounce-2{
+  animation: bounce-2 3s linear 0.5s infinite alternate;
+}
+
+.bouncing-2{
+  animation: bouncing-2 1.5s ease-in 2s infinite alternate;
+}
+
+@keyframes bounce-2{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(calc(100vw - 10vmin));
+  }
+}
+
+@keyframes bouncing-2{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(calc(100vh - 10vmin));
+  }
+}
+
+
+/* Animation ball-3, bounce-3, bouncing-3 */
+.ball-3{
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  right: 60px;
+  left: 0;
+  border-radius: 50%;
+  background: radial-gradient(#fff, #0428f3, #9430ff);
+}
+
+.bounce-3{
+  animation: bounce-3 3s linear 0.5s infinite alternate;
+}
+
+.bouncing-3{
+  animation: bouncing-3 1.5s ease-in 2.5s infinite alternate;
+}
+
+@keyframes bounce-3{
+  from{
+    transform: translateX(0px);
+  }
+  to{
+    transform: translateX(calc(100vw - 10vmin));
+  }
+}
+
+@keyframes bouncing-3{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(calc(100vh - 10vmin));
+  }
+}
+
+
